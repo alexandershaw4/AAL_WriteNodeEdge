@@ -9,6 +9,7 @@ function [node1,node2,strng] = conmat2nodes(A,savename,varargin)
 
 load([fileparts(which('conmat2nodes')),'/AAL_SOURCEMOD.mat']);
 
+
 node1 = []; node2 = []; strng = [];
 for i = 1:length(A)
     [ix,iy,iv] = find(A(i,:));
@@ -44,3 +45,6 @@ if nargin > 1;
     dlmwrite([savename '.edge'],A,'delimiter','\t');
     dlmwrite([savename '.node'],C,'delimiter','\t');
 end
+
+end
+
