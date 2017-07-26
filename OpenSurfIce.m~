@@ -1,8 +1,6 @@
 function OpenSurfIce(A,savename)
 % Input 1: A is a 90x90 matrix to open in SurfIce
-% Input 2: (optional) filename to save image as
-% 
-% Defaults: axial view, 30% mesh transparency
+% Input
 % AS
 
 conmat2nodes(A,'temp');       % write node & edges
