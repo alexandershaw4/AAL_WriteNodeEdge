@@ -16,6 +16,7 @@ exe   = '/Applications/Surfice/surfice.app/Contents/MacOS/surfice';      % path 
 more  = 'CLIPAZIMUTHELEVATION(0, 0, 130);'; % view angle
 more  = [more 'SHADERXRAY(0.3, 1); '];      % transparency of brain and overlay
 more  = [more 'VIEWAXIAL(true);'];          % axial viewpoint
+more  = [more 'COLORBARVISIBLE(true);'];    % colorbar!
 
 % save if savename passed
 if nargin > 1
