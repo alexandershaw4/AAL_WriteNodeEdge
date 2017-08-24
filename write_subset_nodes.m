@@ -1,4 +1,4 @@
-function write_subset_nodes(node,edge)
+function [nodes,edges] = write_subset_nodes(node,edge)
 % Write node & edge files for a subset of nodes only.
 %
 % node = cell array of the names of the nodes of interest
